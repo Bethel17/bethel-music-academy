@@ -1,428 +1,616 @@
+/*====================================
+ BETHEL MUSIC ACADEMY
+====================================*/
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
     background:#f5f7fb;
     color:#333;
-    line-height:1.6;
+    overflow-x:hidden;
 }
+
+/*================ HEADER ================*/
 
 .header{
-    background:#0b3d91;
-    color:white;
-    text-align:center;
-    padding:20px;
+    background:#0b2d6b;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
 }
 
-.header h1{
-    font-size:32px;
-    margin-bottom:10px;
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
-.header p{
-    font-size:18px;
-    margin-bottom:20px;
+.logo-box img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #fff;
+}
+
+.logo-box h1{
+    color:#fff;
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo-box p{
+    color:#ddd;
+    font-size:16px;
 }
 
 nav{
     display:flex;
-    justify-content:center;
+    gap:25px;
     flex-wrap:wrap;
-    gap:20px;
 }
 
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
+    font-size:17px;
+    font-weight:600;
     transition:.3s;
 }
 
 nav a:hover{
     color:#FFD700;
 }
+/*================ HERO ================*/
 
 .hero{
-    .hero{
-    background:#0b3d91;
-    color:white;
-    text-align:center;
-    padding:120px 20px;
-    }
-}
-
-.hero h2{
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:22px;
-    margin-bottom:30px;
-}
-
-.hero button{
-    background:#FFD700;
-    color:#0b3d91;
-    border:none;
-    padding:15px 40px;
-    border-radius:30px;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.hero button:hover{
-    transform:scale(1.05);
-}
-
-section{
-    padding:60px 20px;
-    text-align:center;
-}
-
-section h2{
-    color:#0b3d91;
-    margin-bottom:25px;
-    font-size:34px;
-}
-
-.card{
-    background:white;
-    max-width:350px;
-    margin:20px auto;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-.card h3{
-    color:#0b3d91;
-    margin-bottom:10px;
-}
-``
-#about{
-    background:#eef3ff;
-}
-
-#courses{
-    background:#ffffff;
-}
-
-#gallery{
-    background:#f8f9fa;
-}
-
-#registration{
-    background:#eef3ff;
-}
-
-form{
-    max-width:500px;
-    margin:0 auto;
-}
-
-form input,
-form select,
-form textarea{
-    width:100%;
-    padding:15px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:8px;
-    font-size:16px;
-}
-
-form textarea{
-    height:120px;
-    resize:none;
-}
-
-form button{
-    width:100%;
-    background:#0b3d91;
-    color:white;
-    border:none;
-    padding:15px;
-    border-radius:8px;
-    font-size:18px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-form button:hover{
-    background:#062b66;
-}
-
-#contact{
-    background:#ffffff;
-}
-
-#contact p{
-    font-size:18px;
-    margin:10px 0;
-}
-
-#contact a{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-}
-
-#contact a:hover{
-    background:#1ea952;
-}
-
-footer{
-    background:#0b3d91;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-}
-
-/* Floating WhatsApp Button */
-
-
-  /* Floating WhatsApp Button */
-
-.floating-whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    width:65px;
-    height:65px;
-    background:#25D366;
-    color:white;
-    border-radius:50%;
+    background:linear-gradient(to bottom,#ffffff,#e8f0ff);
+    min-height:90vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:32px;
-    text-decoration:none;
-    box-shadow:0 6px 20px rgba(0,0,0,0.3);
-    z-index:999;
-    transition:0.3s;
+    text-align:center;
+    padding:20px;
 }
 
-.floating-whatsapp:hover{
-    transform:scale(1.1);
-}
-    
-
-@media(max-width:768px){
-
-.header h1{
-    font-size:26px;
-}
-
-.hero{
-    padding:80px 20px;
+.hero-content{
+    max-width:900px;
 }
 
 .hero h2{
-    font-size:28px;
+    color:#0b2d6b;
+    font-size:60px;
+    font-weight:700;
+    margin-bottom:25px;
+    line-height:1.2;
 }
 
 .hero p{
-    font-size:18px;
+    color:#444;
+    font-size:24px;
+    margin-bottom:35px;
+    line-height:1.8;
 }
 
-nav{
-    gap:12px;
-}
+/*================ JOIN BUTTON ================*/
 
-nav a{
-    font-size:16px;
-}
-
-.card{
-    width:90%;
-}
-
-}
-.card{
-    background:#fff;
-    max-width:350px;
-    margin:20px auto;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 12px 25px rgba(0,0,0,0.25);
-}
-.hero button{
+.btn{
+    display:inline-block;
+    background:#FFD700;
+    color:#000;
+    text-decoration:none;
+    padding:18px 45px;
+    border-radius:50px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.4s;
     animation:pulse 2s infinite;
 }
 
+.btn:hover{
+    background:#0b2d6b;
+    color:#fff;
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
 @keyframes pulse{
+
     0%{
         transform:scale(1);
     }
+
     50%{
         transform:scale(1.08);
+        box-shadow:0 0 25px rgba(255,215,0,.8);
     }
+
     100%{
         transform:scale(1);
     }
-}
-/* Registration Section */
 
-.register{
+}
+
+/*================ COMMON ================*/
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:30px;
+    color:#0b2d6b;
+}
+/*================ ABOUT ================*/
+
+.about{
     background:#ffffff;
-    padding:60px 20px;
     text-align:center;
 }
 
-.register h2{
-    color:#0b3d91;
-    font-size:36px;
-    margin-bottom:30px;
+.about p{
+    max-width:900px;
+    margin:15px auto;
+    font-size:20px;
+    line-height:1.8;
+    color:#555;
 }
 
-.register form{
-    max-width:500px;
-    margin:auto;
+/*================ COURSES ================*/
+
+.courses{
+    background:#eef4ff;
 }
 
-.register input,
-.register select,
-.register textarea{
-    width:100%;
-    padding:15px;
-    margin:10px 0;
-    border:2px solid #ddd;
-    border-radius:10px;
-    font-size:16px;
-    outline:none;
-    transition:0.3s;
-    box-sizing:border-box;
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
 }
 
-.register input:focus,
-.register select:focus,
-.register textarea:focus{
-    border-color:#0b3d91;
-    box-shadow:0 0 10px rgba(11,61,145,0.2);
-}
-
-.register textarea{
-    height:120px;
-    resize:none;
-}
-
-.register button{
-    width:100%;
-    padding:15px;
-    background:#ffd400;
-    color:#0b3d91;
-    border:none;
-    border-radius:30px;
-    font-size:18px;
-    font-weight:bold;
+.course-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
     cursor:pointer;
-    margin-top:15px;
-    transition:0.3s;
 }
 
-.register button:hover{
-    background:#0b3d91;
-    color:white;
-    transform:scale(1.03);
-}
-.join-btn{
-    display:inline-block;
-    background:#ffd400;
-    color:#0b3d91;
-    padding:15px 40px;
-    border-radius:40px;
-    text-decoration:none;
-    font-size:22px;
-    font-weight:bold;
-    transition:0.3s;
+.course-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
-.join-btn:hover{
-    background:#0b3d91;
-    color:#fff;
+.course-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    transition:.4s;
 }
-.registration{
-    padding:60px 20px;
+
+.course-card:hover img{
+    transform:scale(1.08);
+}
+
+.course-card h3{
     text-align:center;
+    color:#0b2d6b;
+    margin:18px 0 10px;
+    font-size:24px;
+}
+
+.course-card p{
+    text-align:center;
+    padding:0 20px 25px;
+    color:#555;
+    line-height:1.7;
+}
+/*================ GALLERY ================*/
+
+.gallery{
     background:#ffffff;
 }
 
-.registration h2{
-    color:#0b3d91;
+.gallery-text{
+    text-align:center;
+    color:#666;
+    font-size:18px;
     margin-bottom:30px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.12);
+}
+
+.gallery-item h3{
+    text-align:center;
+    color:#0b2d6b;
+    padding:15px;
+    font-size:22px;
+}
+
+.gallery-item p{
+    text-align:center;
+    color:#666;
+    padding:0 15px 20px;
+}
+
+/* Gallery Image Border */
+
+.gallery-item img{
+    border-bottom:4px solid #FFD700;
+}
+/*================ REGISTRATION ================*/
+
+.registration{
+    background:#eef4ff;
 }
 
 .registration form{
-    max-width:400px;
+    max-width:650px;
     margin:auto;
+    background:#ffffff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .registration input,
 .registration select{
+
     width:100%;
-    padding:15px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:10px;
-    font-size:16px;
+    padding:16px;
+    margin:15px 0;
+
+    border:2px solid #ddd;
+    border-radius:12px;
+
+    font-size:17px;
+
+    transition:.3s;
+
 }
 
-.registration button{
+.registration input:focus,
+.registration select:focus{
+
+    border-color:#0b2d6b;
+
+    box-shadow:0 0 12px rgba(11,45,107,.20);
+
+    outline:none;
+
+}
+
+.register-btn{
+
     width:100%;
-    padding:15px;
-    background:#ffd700;
-    color:#0b3d91;
+
+    padding:18px;
+
+    background:#FFD700;
+
+    color:#000;
+
     border:none;
-    border-radius:30px;
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.register-btn:hover{
+
+    background:#0b2d6b;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.register-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* Placeholder */
+
+.registration input::placeholder{
+
+    color:#888;
+
+}
+/*================ CONTACT ================*/
+
+.contact{
+    background:#0b2d6b;
+    color:#fff;
+    text-align:center;
+}
+
+.contact h2{
+    color:#fff;
+}
+
+.contact-card{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    color:#333;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.20);
+}
+
+.contact-card h3{
+    color:#0b2d6b;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.contact-card p{
+    font-size:18px;
+    margin:15px 0;
+    line-height:1.8;
+}
+
+.contact-card i{
+    color:#0b2d6b;
+    margin-right:8px;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:16px 35px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
     font-size:18px;
     font-weight:bold;
-}
-#gallery{
-    padding:60px 20px;
-    text-align:center;
-    background:#f5f5f5;
+    transition:.3s;
 }
 
-#gallery h2{
-    color:#0b3d91;
-    margin-bottom:30px;
+.whatsapp-btn:hover{
+    background:#1da851;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
 }
 
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:15px;
+/*================ GOOGLE MAP ================*/
+
+.map{
+    background:#fff;
 }
 
-.gallery img{
+.map iframe{
     width:100%;
-    height:180px;
-    object-fit:cover;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-    transition:0.3s;
+    height:420px;
+    border:0;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
-.gallery img:hover{
-    transform:scale(1.05);
+/*================ FLOATING WHATSAPP ================*/
+
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:32px;
+    box-shadow:0 8px 20px rgba(0,0,0,.30);
+    z-index:9999;
+    animation:whatsappPulse 2s infinite;
 }
+
+@keyframes whatsappPulse{
+
+0%{
+    transform:scale(1);
+}
+
+50%{
+    transform:scale(1.12);
+}
+
+100%{
+    transform:scale(1);
+}
+
+}
+/*================ FOOTER ================*/
+
+footer{
+    background:#071d49;
+    color:#ffffff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+footer p{
+    font-size:16px;
+    margin:8px 0;
+    color:#ddd;
+}
+
+/*================ SCROLLBAR ================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e8f0ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0b2d6b;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#FFD700;
+}
+
+/*================ IMAGE ================*/
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/*================ MOBILE RESPONSIVE ================*/
+
+@media(max-width:768px){
+
+.header{
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.logo-box{
+    flex-direction:column;
+    gap:10px;
+}
+
+.logo-box h1{
+    font-size:24px;
+}
+
+.logo-box p{
+    font-size:14px;
+}
+
+nav{
+    justify-content:center;
+    gap:15px;
+    margin-top:15px;
+}
+
+nav a{
+    font-size:15px;
+}
+
+.hero{
+    min-height:70vh;
+}
+
+.hero h2{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.btn{
+    padding:14px 30px;
+    font-size:18px;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.course-grid,
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-card{
+    padding:25px;
+}
+
+.registration form{
+    padding:25px;
+}
+
+.floating-whatsapp{
+    width:55px;
+    height:55px;
+    font-size:28px;
+    right:15px;
+    bottom:15px;
+}
+
+.map iframe{
+    height:300px;
+}
+
+footer h3{
+    font-size:22px;
+}
+
+}
+
+/*================ END ================*/

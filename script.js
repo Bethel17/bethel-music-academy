@@ -1,42 +1,72 @@
+// ==========================================
 // Bethel Music Academy
+// ==========================================
 
 const form = document.getElementById("registrationForm");
 
-if (form) {
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
+if(form){
 
-        const name = document.querySelector('input[name="name"]').value;
-        const mobile = document.querySelector('input[name="mobile"]').value;
-        const email = document.querySelector('input[name="email"]').value;
-        const course = document.querySelector('select[name="course"]').value;
-        const mode = document.querySelector('select[name="mode"]').value;
+form.addEventListener("submit",function(e){
 
-        const message =
-`🎵 Bethel Music Academy Registration
+e.preventDefault();
 
-👤 Name: ${name}
-📱 Mobile: ${mobile}
-📧 Email: ${email}
-🎹 Course: ${course}
-🏫 Class Mode: ${mode}`;
+const name=form.name.value.trim();
+const age=form.age.value.trim();
+const mobile=form.mobile.value.trim();
+const course=form.course.value;
+const mode=form.mode.value;
 
-        const url =
-"https://wa.me/917200008347?text=" + encodeURIComponent(message);
+if(name===""||age===""||mobile===""||course===""||mode===""){
 
-        window.location.href = url;
+alert("Please fill all the details.");
 
-        form.reset();
-    });
+return;
+
 }
 
-// Join Button
-const joinBtn = document.querySelector(".join-btn");
+const message=
+`🎵 Bethel Music Academy
 
-if (joinBtn) {
-    joinBtn.addEventListener("click", function () {
-        document.getElementById("registration").scrollIntoView({
-            behavior: "smooth"
-        });
-    });
+👤 Student Name : ${name}
+
+🎂 Age : ${age}
+
+📱 Mobile : ${mobile}
+
+🎹 Course : ${course}
+
+🏫 Class Mode : ${mode}`;
+
+const phone="917200008347";
+
+window.open(
+`https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+"_blank"
+);
+
+alert("✅ Registration Successful!");
+
+form.reset();
+
+});
+
 }
+
+// Smooth Scroll
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener("click",function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href"))
+.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+});
+
+});
