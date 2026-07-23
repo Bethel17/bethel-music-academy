@@ -1,1 +1,0 @@
-# bethel-music-academy
